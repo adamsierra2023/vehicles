@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>Documentation for the Vehicle API.</description>
+        <direct>false</direct>
+        <endpoint>x_461903_vehicles_vehicle_api_documentation.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<g:evaluate var="jvar_now_GR" object="true">
+   var now_GR = new GlideRecord("incident");
+   now_GR.addQuery("active", true);
+   now_GR.query();
+   now_GR;
+</g:evaluate>
+ 
+<j:if test="${!jvar_now_GR.hasNext()}">
+   We did not find any active incidents.
+</j:if>
+<j:if test="${jvar_now_GR.next()}">
+   We found ${jvar_now_GR.getRowCount()} active incidents.
+</j:if>
+</j:jelly>]]></html>
+        <name>vehicle_api_documentation</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-12 15:27:27</sys_created_on>
+        <sys_id>2732a27e93864210236b7bfdfaba10d1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>vehicle_api_documentation</sys_name>
+        <sys_package display_value="Vehicles" source="x_461903_vehicles">3d3f7db293064210236b7bfdfaba10e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vehicles">3d3f7db293064210236b7bfdfaba10e2</sys_scope>
+        <sys_update_name>sys_ui_page_2732a27e93864210236b7bfdfaba10d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-12 15:29:27</sys_updated_on>
+    </sys_ui_page>
+</record_update>
