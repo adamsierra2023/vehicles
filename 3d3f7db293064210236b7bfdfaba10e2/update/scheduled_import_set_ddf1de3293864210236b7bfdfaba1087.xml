@@ -38,7 +38,7 @@
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
         <run_period>1970-01-01 01:00:00</run_period>
-        <run_start>2024-05-12 17:30:00</run_start>
+        <run_start>2024-05-12 09:45:00</run_start>
         <run_time>1970-01-01 08:00:00</run_time>
         <run_type>periodically</run_type>
         <show_connection_override>false</show_connection_override>
@@ -47,14 +47,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-12 14:14:46</sys_created_on>
         <sys_id>ddf1de3293864210236b7bfdfaba1087</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Import Vehicles </sys_name>
         <sys_package display_value="Vehicles" source="x_461903_vehicles">3d3f7db293064210236b7bfdfaba10e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicles">3d3f7db293064210236b7bfdfaba10e2</sys_scope>
         <sys_update_name>scheduled_import_set_ddf1de3293864210236b7bfdfaba1087</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-12 14:29:15</sys_updated_on>
+        <sys_updated_on>2024-05-12 18:39:12</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
         <use_child_connection>false</use_child_connection>

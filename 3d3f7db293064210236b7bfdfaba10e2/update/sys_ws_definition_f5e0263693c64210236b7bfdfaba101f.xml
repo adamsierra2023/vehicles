@@ -6,8 +6,8 @@
         <consumes_customized>true</consumes_customized>
         <default_version>No active default version</default_version>
         <doc_link>https://dev185226.service-now.com/x_461903_vehicles_vehicle_api_documentation.do</doc_link>
-        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
-        <is_versioned>false</is_versioned>
+        <enforce_acl>46bc5372930e4210236b7bfdfaba1035</enforce_acl>
+        <is_versioned>true</is_versioned>
         <name>Vehicles</name>
         <namespace>x_461903_vehicles</namespace>
         <produces>application/json</produces>
@@ -18,13 +18,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-05-12 15:19:52</sys_created_on>
         <sys_id>f5e0263693c64210236b7bfdfaba101f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Vehicles</sys_name>
         <sys_package display_value="Vehicles" source="x_461903_vehicles">3d3f7db293064210236b7bfdfaba10e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicles">3d3f7db293064210236b7bfdfaba10e2</sys_scope>
         <sys_update_name>sys_ws_definition_f5e0263693c64210236b7bfdfaba101f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-12 15:31:21</sys_updated_on>
+        <sys_updated_on>2024-05-12 19:47:29</sys_updated_on>
     </sys_ws_definition>
 </record_update>

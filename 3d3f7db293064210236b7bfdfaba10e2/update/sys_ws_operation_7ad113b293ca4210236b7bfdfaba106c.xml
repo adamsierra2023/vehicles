@@ -4,9 +4,9 @@
         <consumes>application/json</consumes>
         <consumes_customized>false</consumes_customized>
         <default_operation_uri/>
-        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <enforce_acl>46bc5372930e4210236b7bfdfaba1035</enforce_acl>
         <http_method>GET</http_method>
-        <name>Get Vehicles</name>
+        <name>Get Vehicles (v2)</name>
         <operation_script><![CDATA[/*
 API:            Vehicles
 Name:           Get Vehicles
@@ -37,8 +37,12 @@ Description:    Returns data for selected vehicles.
     // Query the Vehicle table using these parameters.
     var vehicleTable = 'x_461903_vehicles_vehicle';
     var vehicleGr = new GlideRecord(vehicleTable);
-    if (make) { vehicleGr.addQuery('make', make); }
-    if (model) { vehicleGr.addQuery('model', model); }
+    if (make) { vehicleGr.addQuery('make', make); } //Encoded query.
+    // The model query parameter accepts encoded queries. For example:
+    // model=XC90
+    // modelLIKEXC
+    // modelINXC90,XC60
+    if (model) { vehicleGr.addQuery(model); }
     if (year) { vehicleGr.addQuery('year', year); }
     if (country) { vehicleGr.addQuery('country', country); }
     if (city) { vehicleGr.addQuery('city', city); }
@@ -72,7 +76,7 @@ Description:    Returns data for selected vehicles.
     response.setBody(answer);
 
 })(request, response);]]></operation_script>
-        <operation_uri>/api/x_461903_vehicles/v1/vehicles/vehicles</operation_uri>
+        <operation_uri>/api/x_461903_vehicles/v2/vehicles/vehicles</operation_uri>
         <produces>application/json</produces>
         <produces_customized>false</produces_customized>
         <relative_path>/vehicles</relative_path>
@@ -83,17 +87,17 @@ Description:    Returns data for selected vehicles.
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-05-12 16:16:54</sys_created_on>
-        <sys_id>16adeabe93c64210236b7bfdfaba10b1</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Get Vehicles</sys_name>
+        <sys_created_on>2024-05-12 18:53:26</sys_created_on>
+        <sys_id>7ad113b293ca4210236b7bfdfaba106c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Get Vehicles (v2)</sys_name>
         <sys_package display_value="Vehicles" source="x_461903_vehicles">3d3f7db293064210236b7bfdfaba10e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="Vehicles">3d3f7db293064210236b7bfdfaba10e2</sys_scope>
-        <sys_update_name>sys_ws_operation_16adeabe93c64210236b7bfdfaba10b1</sys_update_name>
+        <sys_update_name>sys_ws_operation_7ad113b293ca4210236b7bfdfaba106c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-05-12 18:51:50</sys_updated_on>
+        <sys_updated_on>2024-05-12 19:48:34</sys_updated_on>
         <web_service_definition display_value="Vehicles">f5e0263693c64210236b7bfdfaba101f</web_service_definition>
-        <web_service_version display_value="v1">9b71dbbe938a4210236b7bfdfaba10b5</web_service_version>
+        <web_service_version display_value="v2">3ed113b293ca4210236b7bfdfaba1069</web_service_version>
     </sys_ws_operation>
 </record_update>
